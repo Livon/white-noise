@@ -1,0 +1,299 @@
+/*
+Start: onlineclock.net/css/onlineclock-v3.css
+*/
+html,td{font-family:helvetica,arial;font-size:12px;font-weight:bold;}h1.header{font-size:2px;margin-top:0px;margin-bottom:0px;}a.sizeLink,.sizeLink{font-family:helvetica,arial;font-size:12px;font-weight:bold;color:#FFFFFF;}.qmmc .qmdivider{display:block;font-size:1px;border-width:0px;border-style:solid;position:relative;z-index:1;}.qmmc .qmdividery{float:left;width:0px;}.qmmc .qmtitle{display:block;cursor:default;white-space:nowrap;position:relative;z-index:1;}.qmclear{font-size:1px;height:0px;width:0px;clear:left;line-height:0px;display:block;float:none!important;}.qmmc{position:relative;zoom:1;z-index:10;}.qmmc a,.qmmc li{float:left;display:block;white-space:nowrap;position:relative;z-index:1;}.qmmc div a,.qmmc ul a,.qmmc ul li{float:none;}.qmsh div a{float:left;}.qmmc div{visibility:hidden;position:absolute;}.qmmc .qmcbox{cursor:default;display:inline-block;position:relative;z-index:1;}.qmmc .qmcbox a{display:inline;}.qmmc .qmcbox div{float:none;position:static;visibility:inherit;left:auto;}#qm0{width:auto;}#qm0 a{padding:0px 3px 0px 0px;background-color:transparent;color:#FFFFFF;font-family:helvetica,arial;font-size:10px;text-decoration:underline;text-align:left;}#qm0 div{padding:10px;margin:-1px 0px 0px 0px;background-color:transparent;border-width:1px;border-style:solid;border-color:#222222;}#qm0 div a{padding:3px 20px 3px 2px;margin:0px;background-color:transparent;color:#EEEEEE;font-family:helvetica,arial;font-size:9px;text-decoration:underline;}#qm0 div a:hover{color:#FFFFFF;text-decoration:underline;}#qm0 div a:hover{color:#FFFFFF;text-decoration:underline;}#qm0 div .qmparent{}body #qm0 div .qmactive,body #qm0 div .qmactive:hover{background-color:#FFFFFF;color:#000000;text-decoration:underline;}#qm0 .qmtitle{margin:2px 0px 5px 0px;color:#999999;font-family:helvetica,arial;font-size:12px;font-weight:bold;}#qm0 .qmdividerx{border-top-width:1px;margin:4px 0px 4px 0px;border-color:#999999;}ul#qm0 a img{display:block;border-style:none;}ul#qm0 ul li:hover>a.qmparent{background-color:#FFFFFF;color:#000000;text-decoration:underline;}
+/*
+End: onlineclock.net/css/onlineclock-v3.css
+*/
+/*
+Start: Noise Generator's own CSS
+*/
+@charset "UTF-8";
+/* Colors */
+/* Misc */
+/** 
+* Make flexbox grids super easy!
+* ---
+* @param $cols  —  Number of columns
+* @param $margin  —  Margin with unit
+*/
+/* Fast way to center hor and vert */
+/* Media Queries */
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,400,700");
+input[type=range] {
+  transition: opacity 2s;
+  box-sizing: border-box;
+  font-size: 1em;
+  line-height: 0.5em;
+  height: 0.5em;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-appearance: none;
+  width: 50%;
+  max-width: 150px; }
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none; }
+  input[type=range]:focus {
+    outline: none; }
+  input[type=range]::-ms-track {
+    width: 50%;
+    max-width: 200px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent; }
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 1em;
+    height: 1em;
+    margin-top: -4px;
+    background-color: white;
+    border-radius: 50%;
+    border: 0 solid rgba(255, 255, 255, 0.5);
+    cursor: pointer; }
+  input[type=range]::-moz-range-thumb {
+    width: 1em;
+    height: 1em;
+    margin-top: -4px;
+    background-color: white;
+    border-radius: 50%;
+    border: 0 solid rgba(255, 255, 255, 0.5);
+    cursor: pointer; }
+  input[type=range]::-ms-thumb {
+    width: 1em;
+    height: 1em;
+    margin-top: -4px;
+    background-color: white;
+    border-radius: 50%;
+    border: 0 solid rgba(255, 255, 255, 0.5);
+    cursor: pointer; }
+  input[type=range]:hover::-webkit-slider-thumb {
+    border-color: rgba(255, 255, 255, 0.7); }
+  input[type=range]:hover::-moz-range-thumb {
+    border-color: rgba(255, 255, 255, 0.7); }
+  input[type=range]:hover::-ms-thumb {
+    border-color: rgba(255, 255, 255, 0.7); }
+  input[type=range]:active::-webkit-slider-thumb {
+    border-color: white; }
+  input[type=range]:active::-moz-range-thumb {
+    border-color: white; }
+  input[type=range]:active::-ms-thumb {
+    border-color: white; }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 50%;
+    max-width: 150px;
+    cursor: pointer;
+    height: 2px;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+    background-color: transparent; }
+  input[type=range]::-moz-range-track {
+    width: 50%;
+    max-width: 150px;
+    cursor: pointer;
+    height: 2px;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+    background-color: transparent; }
+  input[type=range]::-ms-track {
+    background: transparent;
+    border-color: transparent;
+    color: transparent; }
+
+.sounds_container {
+  margin: 0 auto;
+  padding: 10px 1em 0 1em;
+  max-width: 1024px; }
+  @media screen and (min-width: 600px) and (max-width: 799px) {
+    .sounds_container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .sounds_container:after {
+        flex: auto;
+        margin: 0 auto;
+        content: ""; }
+      .sounds_container > * {
+        width: calc( 50% - 0.5em);
+        margin-left: 0.5em;
+        margin-right: 0.5em; }
+        .sounds_container > *:nth-child(1) {
+          margin-left: 0; }
+        .sounds_container > *:nth-child(2n) {
+          margin-right: 0; }
+        .sounds_container > *:nth-child(2n + 1) {
+          margin-left: 0; } }
+  @media screen and (min-width: 800px) and (max-width: 999px) {
+    .sounds_container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .sounds_container:after {
+        flex: auto;
+        margin: 0 auto;
+        content: ""; }
+      .sounds_container > * {
+        width: calc( 50% - 0.5em);
+        margin-left: 0.5em;
+        margin-right: 0.5em; }
+        .sounds_container > *:nth-child(1) {
+          margin-left: 0; }
+        .sounds_container > *:nth-child(2n) {
+          margin-right: 0; }
+        .sounds_container > *:nth-child(2n + 1) {
+          margin-left: 0; } }
+  @media screen and (min-width: 1000px) {
+    .sounds_container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .sounds_container:after {
+        flex: auto;
+        margin: 0 auto;
+        content: ""; }
+      .sounds_container > * {
+        width: calc( 50% - 0.5em);
+        margin-left: 0.5em;
+        margin-right: 0.5em; }
+        .sounds_container > *:nth-child(1) {
+          margin-left: 0; }
+        .sounds_container > *:nth-child(2n) {
+          margin-right: 0; }
+        .sounds_container > *:nth-child(2n + 1) {
+          margin-left: 0; } }
+
+.sounds_container .sound_block {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 250px;
+  height: auto;
+  margin-bottom: 1em; }
+
+.sounds_container .sound_block > .start_btn {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.sounds_container .sound_block > .start_btn img {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: auto;
+  height: 100%;
+  opacity: 0.5;
+  transition: all 1s ease-in; }
+
+.sounds_container .sound_block > .start_btn img.playing {
+  opacity: 1; }
+
+.sounds_container .sound_block > .start_btn a {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: block; }
+
+#top_control {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 100%; }
+
+.control_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 4em 2em 4em;
+  min-height: 200px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  /*border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;*/ }
+  .control_container:after {
+    flex: auto;
+    margin: 0 auto;
+    content: ""; }
+  .control_container > * {
+    width: calc( 100% - 0em);
+    margin-left: 0.5em;
+    margin-right: 0.5em; }
+    .control_container > *:nth-child(1) {
+      margin-left: 0; }
+    .control_container > *:nth-child(1n) {
+      margin-right: 0; }
+    .control_container > *:nth-child(1n + 1) {
+      margin-left: 0; }
+
+.mute_btn {
+  transform: scaleX(-1);
+  position: fixed;
+  top: 1em;
+  right: 0.5em;
+  font-size: 2em; }
+  .mute_btn a {
+    color: white;
+    text-decoration: none; }
+  .mute_btn .muted {
+    display: none; }
+  @media screen and (min-width: 600px) and (max-width: 799px) {
+    .mute_btn {
+      position: fixed;
+      top: 1em;
+      right: 1.2em;
+      font-size: 3em;
+      transform: scaleX(-1); } }
+  @media screen and (min-width: 800px) and (max-width: 999px) {
+    .mute_btn {
+      position: fixed;
+      top: 1em;
+      right: 1.2em;
+      font-size: 3em;
+      transform: scaleX(-1); } }
+  @media screen and (min-width: 1000px) {
+    .mute_btn {
+      position: fixed;
+      top: 1em;
+      right: 1.2em;
+      font-size: 3em;
+      transform: scaleX(-1); } }
+
+.reset_btn {
+  position: fixed;
+  top: 2.5em;
+  right: 0.5em;
+  font-size: 2em; }
+  .reset_btn a {
+    color: white;
+    text-decoration: none; }
+  .reset_btn .muted {
+    display: none; }
+  @media screen and (min-width: 600px) and (max-width: 799px) {
+    .reset_btn {
+      position: fixed;
+      top: 2.5em;
+      right: 1.2em;
+      font-size: 3em; } }
+  @media screen and (min-width: 800px) and (max-width: 999px) {
+    .reset_btn {
+      position: fixed;
+      top: 2.5em;
+      right: 1.2em;
+      font-size: 3em; } }
+  @media screen and (min-width: 1000px) {
+    .reset_btn {
+      position: fixed;
+      top: 3em;
+      right: 1.5em;
+      font-size: 2.5em; } }
+
+.volume_bar {
+  opacity: 0; }
+/*
+End: Noise Generator's own CSS
+*/
