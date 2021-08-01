@@ -6,6 +6,8 @@
 
 ## 公网地址
 
+https://wn.yunzhh.com/main1.html
+
 我把它上传到了一个免费的空间上 
 🔗 http://wn2021.byethost10.com/white-noise/main1.html
 
